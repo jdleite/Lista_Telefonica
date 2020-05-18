@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/id_cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/btnColor"
+        app:cardBackgroundColor="@color/btnColor">
+
+        <TextView
+            android:id="@+id/id_txt_row_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:hint="Nome:"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/id_txt_row_telephone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="40dp"
+            android:hint="Telefone:"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/id_txt_row_name"
+            app:layout_constraintTop_toTopOf="@id/id_txt_row_name" />
+
+        <TextView
+            android:id="@+id/id_txt_row_cellphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="80dp"
+            android:hint="Celular:"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/id_txt_row_telephone"
+            app:layout_constraintTop_toTopOf="@id/id_txt_row_telephone" />
+
+        <ImageView
+            android:id="@+id/id_img_remove"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="350dp"
+            android:src="@drawable/close_foreground"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/id_txt_row_name"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

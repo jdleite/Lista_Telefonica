@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <EditText
+        android:id="@+id/id_edt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="Nome"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.20"
+        android:textColorHint="@android:color/white"
+        android:backgroundTint="@android:color/white"
+        tools:ignore="UnusedAttribute" />
+
+    <EditText
+        android:id="@+id/id_edt_telephone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/white"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="100dp"
+        android:hint="Telefone"
+        android:textStyle="bold"
+        android:textColorHint="@android:color/white"
+        app:layout_constraintStart_toStartOf="@id/id_edt_name"
+        app:layout_constraintTop_toTopOf="@id/id_edt_name" />
+
+    <EditText
+        android:id="@+id/id_edt_cellphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/white"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="100dp"
+        android:hint="Celular"
+        android:textColorHint="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/id_edt_telephone"
+        app:layout_constraintTop_toTopOf="@+id/id_edt_telephone"/>
+
+    <Button
+        android:id="@+id/id_btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salvar"
+        app:layout_constraintStart_toStartOf="@+id/id_edt_cellphone"
+        app:layout_constraintTop_toTopOf="@+id/id_edt_cellphone"
+        android:layout_marginTop="100dp"
+        android:background="@color/btnColor"
+        android:textColor="@android:color/white"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
